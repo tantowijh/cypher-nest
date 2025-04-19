@@ -1,0 +1,123 @@
+{
+    "app": {
+        "name": "Cyper Nest",
+        "description": "Secure text encryption and decryption using modern and classical methods, powered by {{ technology }}."
+    },
+    "functionalities": {
+        "encrypt": {
+            "label": "Encrypt",
+            "success": "Text encrypted successfully!",
+            "errors": {
+                "general": "An error occurred during encryption.",
+                "unknown": "An unknown error occurred.",
+                "plaintext": {
+                    "empty": "Please enter text to encrypt."
+                },
+                "keyword": {
+                    "empty": "Please enter a keyword or passphrase",
+                    "aes": "AES requires a 16-character key."
+                }
+            }
+        },
+        "decrypt": {
+            "label": "Decrypt",
+            "success": "Text decrypted successfully!",
+            "errors": {
+                "general": "An error occurred during decryption.",
+                "unknown": "An unknown error occurred.",
+                "ciphertext": {
+                    "empty": "Please enter text to decrypt."
+                },
+                "keyword": {
+                    "empty": "Please enter a keyword or passphrase",
+                    "aes": "AES requires a 16-character key."
+                }
+            }
+        },
+        "copy": {
+            "label": {
+                "before": "Copy",
+                "after": "Copied"
+            },
+            "success": "Text copied to clipboard!",
+            "error": "Failed to copy to clipboard."
+        },
+        "clear": {
+            "label": "Clear"
+        }
+    },
+    "methods": {
+        "label": "Encryption Methods",
+        "vigenere": {
+            "label": "Vigenère Cipher",
+            "description": "Vigenère cipher is a classical encryption method that uses a keyword to shift letters."
+        },
+        "xor": {
+            "label": "XOR Cipher",
+            "description": "XOR encryption is a simple but effective method that uses the XOR operation with a passphrase."
+        },
+        "aes": {
+            "label": "AES Encryption",
+            "description": "Advanced Encryption Standard is a modern encryption method that uses a 16-character key for secure encryption."
+        },
+        "rsa": {
+            "label": "RSA Encryption",
+            "description": "RSA (Rivest–Shamir–Adleman) is a public-key encryption method that uses a key pair for encryption and decryption."
+        }
+    },
+    "encryptions": {
+        "outputs": {
+            "label": "Encrypted Text",
+            "messages": {
+                "vigenere": "The keyword is used to encrypt your text. Remember it for decryption.",
+                "xor": "The passphrase is used to encrypt your text. Keep it secure and remember it for decryption.",
+                "aes_one": "AES requires a 16-character key for encryption and decryption. Current length: {{count}} character.",
+                "aes_other": "AES requires a 16-character key for encryption and decryption. Current length: {{count}} characters."
+            }
+        }
+    },
+    "decryptions": {
+        "outputs": {
+            "label": "Decrypted Text",
+            "messages": {
+                "vigenere": "Enter the same keyword that was used for encryption.",
+                "xor": "Enter the same passphrase that was used for encryption.",
+                "aes_one": "Enter the same 16-character key that was used for encryption. Current length: {{count}} character.",
+                "aes_other": "Enter the same 16-character key that was used for encryption. Current length: {{count}} characters."
+            }
+        }
+    },
+    "inputs": {
+        "plaintext": {
+            "label": "Text to Encrypt",
+            "placeholder": "Enter text to encrypt..."
+        },
+        "ciphertext": {
+            "label": "Text to Decrypt",
+            "placeholder": "Enter text to decrypt..."
+        }
+    },
+    "buttons": {
+        "encrypt": "Encrypt",
+        "decrypt": "Decrypt"
+    },
+    "keywords": {
+        "vigenere": {
+            "label": "Keyword",
+            "placeholder": "Enter keyword..."
+        },
+        "xor": {
+            "label": "Passphrase",
+            "placeholder": "Enter passphrase..."
+        },
+        "aes": {
+            "label": "16-Character Key",
+            "placeholder": "Enter 16-character key..."
+        }
+    },
+    "footer": {
+        "builtBy": "Built with ❤️ by {{team}}",
+        "poweredBy": "Powered by <strong>Next.js 15</strong>, <strong>Tailwind CSS</strong>, and <strong>{{technology}}</strong> for encryption and decryption.",
+        "copyright": "© {{year}} {{team}}. All rights reserved."
+    }
+}

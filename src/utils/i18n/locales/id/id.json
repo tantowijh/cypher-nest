@@ -1,0 +1,123 @@
+{
+    "app": {
+        "name": "Cyper Nest",
+        "description": "Enkripsi dan dekripsi teks yang aman menggunakan metode modern dan klasik, didukung oleh {{ technology }}."
+    },
+    "functionalities": {
+        "encrypt": {
+            "label": "Enkripsi",
+            "success": "Teks berhasil dienkripsi!",
+            "errors": {
+                "general": "Terjadi kesalahan saat enkripsi.",
+                "unknown": "Terjadi kesalahan yang tidak diketahui.",
+                "plaintext": {
+                    "empty": "Silakan masukkan teks untuk dienkripsi."
+                },
+                "keyword": {
+                    "empty": "Silakan masukkan kata kunci atau frasa sandi.",
+                    "aes": "AES memerlukan kunci sepanjang 16 karakter."
+                }
+            }
+        },
+        "decrypt": {
+            "label": "Dekripsi",
+            "success": "Teks berhasil didekripsi!",
+            "errors": {
+                "general": "Terjadi kesalahan saat dekripsi.",
+                "unknown": "Terjadi kesalahan yang tidak diketahui.",
+                "ciphertext": {
+                    "empty": "Silakan masukkan teks untuk didekripsi."
+                },
+                "keyword": {
+                    "empty": "Silakan masukkan kata kunci atau frasa sandi.",
+                    "aes": "AES memerlukan kunci sepanjang 16 karakter."
+                }
+            }
+        },
+        "copy": {
+            "label": {
+                "before": "Salin",
+                "after": "Disalin"
+            },
+            "success": "Teks berhasil disalin ke papan klip!",
+            "error": "Gagal menyalin ke papan klip."
+        },
+        "clear": {
+            "label": "Hapus"
+        }
+    },
+    "methods": {
+        "label": "Metode Enkripsi",
+        "vigenere": {
+            "label": "Vigenère Cipher",
+            "description": "Sandi Vigenère adalah metode enkripsi klasik yang menggunakan kata kunci untuk menggeser huruf."
+        },
+        "xor": {
+            "label": "XOR Cipher",
+            "description": "Enkripsi XOR adalah metode sederhana namun efektif yang menggunakan operasi XOR dengan frasa sandi."
+        },
+        "aes": {
+            "label": "Enkripsi AES",
+            "description": "Advanced Encryption Standard adalah metode enkripsi modern yang menggunakan kunci sepanjang 16 karakter untuk keamanan."
+        },
+        "rsa": {
+            "label": "Enkripsi RSA",
+            "description": "RSA (Rivest–Shamir–Adleman) adalah metode enkripsi kunci publik yang menggunakan pasangan kunci untuk enkripsi dan dekripsi."
+        }
+    },
+    "encryptions": {
+        "outputs": {
+            "label": "Teks Terenkripsi",
+            "messages": {
+                "vigenere": "Kata kunci digunakan untuk mengenkripsi teks Anda. Ingat kata kunci ini untuk dekripsi.",
+                "xor": "Frasa sandi digunakan untuk mengenkripsi teks Anda. Simpan dengan aman dan ingat untuk dekripsi.",
+                "aes_one": "AES memerlukan kunci sepanjang 16 karakter untuk enkripsi dan dekripsi. Panjang saat ini: {{count}} karakter.",
+                "aes_other": "AES memerlukan kunci sepanjang 16 karakter untuk enkripsi dan dekripsi. Panjang saat ini: {{count}} karakter."
+            }
+        }
+    },
+    "decryptions": {
+        "outputs": {
+            "label": "Teks Didekripsi",
+            "messages": {
+                "vigenere": "Masukkan kata kunci yang sama yang digunakan untuk enkripsi.",
+                "xor": "Masukkan frasa sandi yang sama yang digunakan untuk enkripsi.",
+                "aes_one": "Masukkan kunci sepanjang 16 karakter yang sama yang digunakan untuk enkripsi. Panjang saat ini: {{count}} karakter.",
+                "aes_other": "Masukkan kunci sepanjang 16 karakter yang sama yang digunakan untuk enkripsi. Panjang saat ini: {{count}} karakter."
+            }
+        }
+    },
+    "inputs": {
+        "plaintext": {
+            "label": "Teks untuk Dienkripsi",
+            "placeholder": "Masukkan teks untuk dienkripsi..."
+        },
+        "ciphertext": {
+            "label": "Teks untuk Didekripsi",
+            "placeholder": "Masukkan teks untuk didekripsi..."
+        }
+    },
+    "buttons": {
+        "encrypt": "Enkripsi",
+        "decrypt": "Dekripsi"
+    },
+    "keywords": {
+        "vigenere": {
+            "label": "Kata Kunci",
+            "placeholder": "Masukkan kata kunci..."
+        },
+        "xor": {
+            "label": "Frasa Sandi",
+            "placeholder": "Masukkan frasa sandi..."
+        },
+        "aes": {
+            "label": "Kunci 16 Karakter",
+            "placeholder": "Masukkan kunci sepanjang 16 karakter..."
+        }
+    },
+    "footer": {
+        "builtBy": "Dibuat dengan ❤️ oleh {{team}}",
+        "poweredBy": "Didukung oleh <strong>Next.js 15</strong>, <strong>Tailwind CSS</strong>, dan <strong>{{technology}}</strong> untuk enkripsi dan dekripsi.",
+        "copyright": "© {{year}} {{team}}. Semua hak dilindungi."
+    }
+}
