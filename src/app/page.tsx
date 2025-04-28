@@ -9,6 +9,7 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { Lock, Unlock } from "lucide-react"
 import { LangSwitcher } from "@/components/lang-switcher"
 import { Trans, useTranslation } from "react-i18next"
+import { DropdownNavigation } from "@/components/navigation-menu"
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("encrypt")
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center pt-20 sm:pt-24 md:pt-28 p-4 sm:p-6 md:p-8 bg-gradient-to-br from-background to-muted/50">
       <div className="absolute top-4 flex items-center gap-2 backdrop-blur-md bg-card/50 p-2 rounded-lg shadow-md z-10">
+        <DropdownNavigation />
         <LangSwitcher />
         <ThemeToggle />
       </div>
